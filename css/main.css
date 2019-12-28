@@ -1,28 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Bebas Neue', cursive;
     /*font-family: 'Open Sans', sans-serif;*/
     /*15px 17px */
     text-transform: uppercase;
+    color: #fff;
 }
 a {
     text-decoration: none;
+    color: #fff;
 }
-ul, li {
+ul, li, h2, h3, p {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    list-style-type: none; 
 }
 .container {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 }
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.title-cards {
+    font-size: 27px;
+    line-height: 1;
+    color: #afafaf;
+    font-weight: 300;
+}
+/*-------------- Header---------------*/
+
 .main-header-logo {
     height: 82px;
     align-items: center;
     padding: 0 22px;
-    display: flex;
-    justify-content: space-between;
 }
-
 .price-logo {
     font-size: 33px;
     color: #a1a1a1;
@@ -37,31 +54,84 @@ ul, li {
     left: -58px;
     top: -5px;
 }
+
+/*===================Navigation==============*/
+
 .main-navigation {
+    position: relative;
     background-color: #4ccfc1;
+    box-shadow: 1px 2px 4px -4px #22615b; /* Тень блока навигации */
+    z-index: 2;
 }
 .menu-navigation {
-    display: flex;
-    justify-content: space-between;
     font-size: 21px;
-    padding: 0 20px;    
-}
-.menu-navigation > li {
-    border-left: 2px solid white;
-    padding-left: 20px;
-}
-.menu-navigation>li:first-child {
-    border: none;
-    padding-left: 0;
-}
-
-.menu-navigation a {
-    color: #fff;
+    padding: 6px 20px 6px 18px;  
 }
 .menu-navigation li {
-    list-style-type: none;
-    /*font-family: 'Open Sans', sans-serif;*/
+    position: relative;
 }
-/*.main-navigation {
+.menu-navigation li::after {
+    content: "|";
+    position: absolute;
+    color: #fff;
+    right: -27px;
 }
-*/
+
+/*====================Main Slide===================*/
+
+.main-slide {
+    background-color: #37beb4;
+    background-image: url(../img/tshirt-fon.png);
+    padding: 67px 0 55px 0;
+}
+.main-slide-img {
+    background-image: url(../img/tshirt.png);
+    width: 278px;
+    height: 325px;
+    margin-left: 78px;
+}
+.about-slide {
+    max-width: 408px;
+    margin-right: 160px;
+    margin-top: 13px;
+}
+.title-about-slide {
+    font-size: 61px;
+    line-height: 0.9;
+    font-weight: 300;
+}
+.desc-slide {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-transform: none;
+    margin: 10px 0 34px 0;
+}
+.btn-main-shop {
+    font-size: 27px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    /* padding: 7px 24px 3px; Если бы это был бы div, а не ссылка */
+    padding: 4px 24px 1px;
+}
+
+/*=====================Item Slider===================*/
+
+.slider-item-list {
+    padding: 24px 70px 24px 24px;
+}
+.shoes-item {
+    display: flex;
+    margin: 0 auto;
+    min-width: 340px;
+    border: 1px solid red;
+}
+.shoes-item-img {
+}
+.title-cards {
+    max-width: 104px;
+    margin-top: 24px;
+    
+}
+.btn-item-shop {
+}
