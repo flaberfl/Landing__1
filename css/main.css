@@ -1,11 +1,15 @@
 body {
     font-family: 'Bebas Neue', cursive;
-    /* font-family: 'Open Sans', sans-serif;
-    15px 17px */
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*15px 17px */
     text-transform: uppercase;
 }
 a {
     text-decoration: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0; 
 }
 .container {
     width: 1024px;
@@ -15,10 +19,10 @@ a {
     height: 82px;
     align-items: center;
     padding: 0 22px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
+
 .price-logo {
     font-size: 33px;
     color: #a1a1a1;
@@ -34,5 +38,30 @@ a {
     top: -5px;
 }
 .main-navigation {
-    font-family: 'Open Sans', sans-serif;
+    background-color: #4ccfc1;
 }
+.menu-navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    padding: 0 20px;    
+}
+.menu-navigation > li {
+    border-left: 2px solid white;
+    padding-left: 20px;
+}
+.menu-navigation>li:first-child {
+    border: none;
+    padding-left: 0;
+}
+
+.menu-navigation a {
+    color: #fff;
+}
+.menu-navigation li {
+    list-style-type: none;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+/*.main-navigation {
+}
+*/
