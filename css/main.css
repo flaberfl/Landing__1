@@ -35,17 +35,17 @@ ul, li, h2, h3, p {
 }
 /*-------------- Header---------------*/
 
-.main-header-logo {
+.header__logo {
     height: 82px;
     align-items: center;
     padding: 0 22px;
 }
-.price-logo {
+.logo-price {
     font-size: 33px;
     color: #a1a1a1;
     position: relative;
 }
-.price-logo::before {
+.logo-price::before {
     content: "";
     background-image: url(../img/basket.svg);
     width: 41px;
@@ -57,50 +57,54 @@ ul, li, h2, h3, p {
 
 /*===================Navigation==============*/
 
-.main-navigation {
-    position: relative;
+.main__nav {
     background-color: #4ccfc1;
-    box-shadow: 1px 2px 4px -4px #22615b; /* Тень блока навигации */
-    z-index: 2;
+    box-shadow: 1px 2px 4px -4px #22615b;  
 }
-.menu-navigation {
+.main__nav-menu {
     font-size: 21px;
-    padding: 6px 20px 6px 18px;  
+    padding: 6px 20px 6px 18px;
 }
-.menu-navigation li {
+.nav-item {
     position: relative;
 }
-.menu-navigation li::after {
+.nav-item::after {
     content: "|";
     position: absolute;
     color: #fff;
     right: -27px;
 }
+.nav-link {
+    transition: .2s;
+}
+.nav-link:hover {
+    color: #a1a1a1;
+}
 
 /*====================Main Slide===================*/
 
-.main-slide {
+.slider__main {
     background-color: #37beb4;
     background-image: url(../img/tshirt-fon.png);
     padding: 67px 0 55px 0;
 }
-.main-slide-img {
+.slider__main-img{
     background-image: url(../img/tshirt.png);
     width: 278px;
     height: 325px;
     margin-left: 78px;
 }
-.about-slide {
+.slider__about {
     max-width: 408px;
     margin-right: 160px;
     margin-top: 13px;
 }
-.title-about-slide {
+.slider__title {
     font-size: 61px;
     line-height: 0.9;
     font-weight: 300;
 }
-.desc-slide {
+.slider__desc {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     line-height: 1.6;
@@ -113,25 +117,27 @@ ul, li, h2, h3, p {
     border-radius: 8px;
     /* padding: 7px 24px 3px; Если бы это был бы div, а не ссылка */
     padding: 4px 24px 1px;
+    /* transition: .4s; */
+}
+.btn-main-shop:hover {
+    border: 4px solid #fff;
 }
 
 /*=====================Item Slider===================*/
 
-.slider-item-list {
+.slider__item-list {
     padding: 24px 70px 24px 24px;
 }
-.shoes-item {
+.list-item {
     display: flex;
     margin: 0 auto;
     min-width: 340px;
     border: 1px solid red;
 }
-.shoes-item-img {
-}
+
 .title-cards {
     max-width: 104px;
-    margin-top: 24px;
-    
+    margin-top: 24px; 
 }
 .btn-item-shop {
 }
