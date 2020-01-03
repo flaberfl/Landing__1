@@ -27,12 +27,7 @@ ul, li, h2, h3, p {
     justify-content: space-between;
     margin: 0 auto;
 }
-.title-cards {
-    font-size: 27px;
-    line-height: 1;
-    color: #afafaf;
-    font-weight: 300;
-}
+
 /*-------------- Header---------------*/
 
 .header__logo {
@@ -64,6 +59,7 @@ ul, li, h2, h3, p {
 .main__nav-menu {
     font-size: 21px;
     padding: 6px 20px 6px 18px;
+    
 }
 .nav-item {
     position: relative;
@@ -87,8 +83,9 @@ ul, li, h2, h3, p {
     background-color: #37beb4;
     background-image: url(../img/tshirt-fon.png);
     padding: 67px 0 55px 0;
+    position: relative;
 }
-.slider__main-img{
+.slider__main-img {
     background-image: url(../img/tshirt.png);
     width: 278px;
     height: 325px;
@@ -127,17 +124,104 @@ ul, li, h2, h3, p {
 
 .slider__item-list {
     padding: 24px 70px 24px 24px;
+    
+    box-shadow: 1px 2px 4px -4px #22615b; 
 }
 .list-item {
     display: flex;
     margin: 0 auto;
     min-width: 340px;
-    border: 1px solid red;
+    position: relative;
 }
-
-.title-cards {
+.title-card {
     max-width: 104px;
-    margin-top: 24px; 
+    margin-top: 24px;
+    font-size: 27px;
+    line-height: 1;
+    color: #afafaf;
+    font-weight: 300;
+}
+.title-card {
+    margin-bottom: 20px;
 }
 .btn-item-shop {
+    font-size: 20px;
+    border: 1px solid #3cc395;
+    background-color: #3cc395;
+    border-radius: 4px;
+    padding: 3px 13px 1px;
+}
+.item-middle {
+    margin-left: 47px;
+}
+.item-right {
+    margin-left: 78px;
+}
+.list-item:last-child img {
+    margin-left: 23px;
+}
+
+/*======================Featured Product=====================*/
+
+.featured-prod__title {
+    background-color: #37beb4;
+    background-image: url(../img/tshirt-fon.png);
+}
+.featured-prod__title-main {
+    font-size: 31px;
+    font-weight: 300;
+    padding: 19px 0 13px 53px;
+}
+.featured-prod__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 46px 90px 28px 58px;
+}
+.card-item {
+    border: 1px solid #e4e4e4;
+    border-bottom: 5px solid #3cc395;
+    flex-basis: 29%;
+    text-align: center;
+    padding: 22px 0 29px 0;
+    margin-bottom: 45px;
+}
+.title-card-item {
+    margin: 0 auto;
+    max-width: none;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+.btn-card {
+    padding: 4px 8px 2px 8px;
+}
+.card-price {
+    display: inline; /* Сделали цену строчным элементом, чтобы расположить на одной строке с кнопко-ссылкой */
+    font-size: 27px;
+    color: #afafaf;
+    vertical-align: middle; /* Выровняли ее по вертикали */
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/*=======================Footer====================*/
+
+.footer {
+    background-color: #3cc3b5;
+}
+.footer__main-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 61px;
+}
+.footer__list-items {
+    font-size: 27px;
+    color: #fff;
+}
+.footer__item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-transform: none;
 }
